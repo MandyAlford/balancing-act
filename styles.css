@@ -2,10 +2,12 @@
    margin: 0px;
    padding: 0px;
    box-sizing: border-box;
+   Font color: #363636;
    font-family: 'Biryani', sans-serif;
 }
 
 h1 {
+  font-size: 3em;
   padding: 2%;
   margin-left: 8%;
 }
@@ -48,6 +50,7 @@ img {
 
 #welcome-message {
   background-image: linear-gradient(to right, #8ED1DC, #E3F4F6);
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.05);
   height: 2%;
   margin-left: 10%;
   width: 35%;
@@ -57,12 +60,55 @@ img {
 #close-message {
   margin: 0px;
   float: right;
-  height: 17px;
+  height: 20px;
+  padding: 5px;
 }
 
 .greeting {
   font-size: 2em;
-  padding: 10% 10% 10% 3%;
+  padding: 9% 5% 5% 3%;
+}
 
+.financial-totals {
+  background-color: white;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.05);
+  /* border: solid red 2px; */
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+  margin-top: 2%;
+  width: 10%;
+}
+.personal-total-label {
+  font-size: 1em;
+}
 
+.personal-total-number {
+  font-size: 1.5em;
+}
+
+.personal-summary {
+  display: flex;
+  align-content: space-between;
+  flex-direction: row;
+  margin-left: 10%;
+  text-align: center;
+}
+
+.account-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin-top: 2%;
+  margin-left: 10%;
+}
+
+#manage-acct-btn {
+  background-color: #1CA3BA;
+  border-radius: 16px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.05);
+  color: white;
+  height: 35px;
+  margin-left: 17%;
+  width: 170px;
 }
