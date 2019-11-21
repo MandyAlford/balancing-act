@@ -13,9 +13,8 @@ h1 {
 }
 
 main {
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   min-height: 703px;
+  display: flex;
 }
 
 nav {
@@ -46,15 +45,19 @@ img {
 
 .financial-overview {
   background-color: #F5F5F5;
+  display: flex;
+  flex-direction: column;
   min-height: 750px;
+  width: 45%;
 }
 
 #welcome-message {
   background-image: linear-gradient(to right, #8ED1DC, #E3F4F6);
   box-shadow: 5px 5px 5px rgba(0,0,0,0.05);
   height: 2%;
+  margin-bottom: 4%;
   margin-left: 10%;
-  width: 35%;
+  width: 73%;
   min-height: 140px;
 }
 
@@ -73,13 +76,13 @@ img {
 .financial-totals {
   background-color: white;
   box-shadow: 5px 5px 5px rgba(0,0,0,0.05);
-  /* border: solid red 2px; */
   display: flex;
   flex-direction: column;
   margin-right: 4%;
   margin-top: 2%;
-  width: 10%;
+  width: 24%;
 }
+
 .personal-total-label {
   font-size: 1em;
 }
@@ -92,6 +95,7 @@ img {
   display: flex;
   align-content: space-between;
   flex-direction: row;
+  margin-bottom: 5%;
   margin-left: 10%;
   text-align: center;
 }
@@ -111,7 +115,7 @@ img {
   box-shadow: 5px 5px 5px rgba(0,0,0,0.05);
   color: white;
   height: 35px;
-  margin-left: 17%;
+  margin-left: 34%;
   width: 170px;
 }
 
@@ -123,9 +127,9 @@ img {
   height: 60px;
   justify-content: space-between;
   margin-left: 10%;
-  margin-bottom: 1%;
+  margin-bottom: 2%;
   padding: 17px;
-  width: 35%;
+  width: 73%;
 }
 
 .acct-icons {
@@ -133,16 +137,61 @@ img {
   margin: 0px;
 }
 
-.transactions {
+.transaction-wrapper {
+  background-color: #F5F5F5;
   display: flex;
   flex-direction: column;
   float: right;
+  min-height: 750px;
+  width: 45%;
+  padding-top: 6%;
+  padding-bottom: 1%;
 }
+
 .transaction-container {
+  background-color: white;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.05);
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  margin-bottom: 1%;
-  margin-top: 2%;
-  margin-left: 10%;
+  margin-top: 4%;
+  padding: 2%;
 }
+
+.transactions {
+  background-color: white;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+.transaction-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.individual-transaction {
+  border-bottom: solid 2px #CCCCCC;
+  display: flex;
+  padding: 2%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* .date {
+  grid-column: 1fr;
+} */
+
+.payee {
+  text-align: justify;
+}
+/*
+.inflow {
+  grid-column: 1fr;
+}
+
+.outflow {
+  grid-column: 1fr;
+} */
