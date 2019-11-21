@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <link href="https://fonts.googleapis.com/css?family=Biryani&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Balancing Act</title>
   </head>
   <body>
     <main>
-      <aside>
-        <img>
-        <img>
-        <img>
-        <img>
-      </aside>
-      <section>
+      <nav>
+        <img class="logo"src="assets/Balancing Act/elephant.svg"</img>
+        <img src="assets/Balancing Act/dashboard.svg"</img>
+        <img src="assets/Balancing Act/transactions.svg"</img>
+        <img src="assets/Balancing Act/profile.svg"</img>
+      </nav>
+      <section class="financial-overview">
         <h1>Balancing Act</h1>
+        <section id="welcome-message">
+          <img id="close-message" src="assets/Balancing Act/close.svg"</img>
+          <p class="greeting">Welcome, Oscar!</p>
+        </section>
         <section id="income">
         </section>
         <section id="expenses">
@@ -33,15 +38,15 @@
           <section class="account">
           </section>
         </section>
-        <section id="transaction-section">
-          <h2>Recent Transactions</h2>
-          <button id="new-transaction-btn" label="New Transaction"></button>
-          <section id="transations"
-            <p class="date">Date</p>
-            <p class="payee">Payee</p>
-            <p class="inflow">Inflow</p>
-            <p class="outflow">Outflow</p>
-          </section>
+      </section>
+      <section id="transaction-section">
+        <h2>Recent Transactions</h2>
+        <button id="new-transaction-btn" label="New Transaction"></button>
+        <section id="transations"
+          <p class="date">Date</p>
+          <p class="payee">Payee</p>
+          <p class="inflow">Inflow</p>
+          <p class="outflow">Outflow</p>
         </section>
       </section>
     </main>

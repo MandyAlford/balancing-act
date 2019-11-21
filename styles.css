@@ -4,3 +4,65 @@
    box-sizing: border-box;
    font-family: 'Biryani', sans-serif;
 }
+
+h1 {
+  padding: 2%;
+  margin-left: 8%;
+}
+
+main {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  min-height: 703px;
+}
+
+nav {
+  /* grid-column: 1fr; */
+  display: flex;
+  flex-direction: column;
+  float: left;
+  width: 7em;
+  background-color: white;
+  justify-content: center;
+  min-height: 703px;
+}
+
+img {
+  height: 40px;
+  margin: 1%;
+  margin-bottom: 12%;
+}
+
+.logo {
+  align-content: center;
+  height: 80px;
+  justify-content: flex-start;
+  margin-left: .5%;
+  position: absolute;
+  top: 0;
+}
+
+.financial-overview {
+  background-color: #F5F5F5;
+}
+
+#welcome-message {
+  background-image: linear-gradient(to right, #8ED1DC, #E3F4F6);
+  height: 2%;
+  margin-left: 10%;
+  width: 35%;
+  min-height: 140px;
+}
+
+#close-message {
+  margin: 0px;
+  float: right;
+  height: 17px;
+}
+
+.greeting {
+  font-size: 2em;
+  padding: 10% 10% 10% 3%;
+
+
+}
