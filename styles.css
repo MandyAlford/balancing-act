@@ -105,7 +105,7 @@ img {
   margin-left: 10%;
 }
 
-#manage-acct-btn {
+.button {
   background-color: #1CA3BA;
   border-radius: 16px;
   box-shadow: 5px 5px 5px rgba(0,0,0,0.05);
@@ -131,4 +131,18 @@ img {
 .acct-icons {
   height: 30px;
   margin: 0px;
+}
+
+.transactions {
+  display: flex;
+  flex-direction: column;
+  float: right;
+}
+.transaction-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin-bottom: 1%;
+  margin-top: 2%;
+  margin-left: 10%;
 }
