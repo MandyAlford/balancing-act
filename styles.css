@@ -26,7 +26,7 @@ nav {
   width: 7em;
   background-color: white;
   justify-content: center;
-  min-height: 703px;
+  min-height: 750px;
 }
 
 img {
@@ -46,6 +46,7 @@ img {
 
 .financial-overview {
   background-color: #F5F5F5;
+  min-height: 750px;
 }
 
 #welcome-message {
@@ -99,6 +100,7 @@ img {
   display: flex;
   flex-direction: row;
   align-items: stretch;
+  margin-bottom: 1%;
   margin-top: 2%;
   margin-left: 10%;
 }
@@ -111,4 +113,22 @@ img {
   height: 35px;
   margin-left: 17%;
   width: 170px;
+}
+
+.account {
+  background-color: white;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-bottom: 1%;
+  padding: 17px;
+  width: 35%;
+}
+
+.acct-icons {
+  height: 30px;
+  margin: 0px;
 }
