@@ -38,7 +38,7 @@ img {
   align-content: center;
   height: 80px;
   justify-content: flex-start;
-  margin-left: .5%;
+  margin-left: 12px;
   position: absolute;
   top: 0;
 }
@@ -48,7 +48,7 @@ img {
   display: flex;
   flex-direction: column;
   min-height: 750px;
-  width: 45%;
+  width: 47%;
 }
 
 #welcome-message {
@@ -180,18 +180,7 @@ img {
   flex-direction: row;
   justify-content: space-between;
 }
-/* .date {
-  grid-column: 1fr;
-} */
 
 .payee {
   text-align: justify;
 }
-/*
-.inflow {
-  grid-column: 1fr;
-}
-
-.outflow {
-  grid-column: 1fr;
-} */
