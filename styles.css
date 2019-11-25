@@ -13,12 +13,12 @@ h1 {
 }
 
 main {
-  min-height: 703px;
+  background-color: #F5F5F5;
+  min-height: 780px;
   display: flex;
 }
 
 nav {
-  /* grid-column: 1fr; */
   display: flex;
   flex-direction: column;
   float: left;
@@ -32,6 +32,10 @@ img {
   height: 40px;
   margin: 1%;
   margin-bottom: 12%;
+}
+
+.active {
+  border-left: 8px solid #06d0f1;
 }
 
 .logo {
@@ -56,7 +60,7 @@ img {
   box-shadow: 5px 5px 5px rgba(0,0,0,0.05);
   height: 2%;
   margin-bottom: 4%;
-  margin-left: 10%;
+  margin-left: 7%;
   width: 73%;
   min-height: 140px;
 }
@@ -96,7 +100,7 @@ img {
   align-content: space-between;
   flex-direction: row;
   margin-bottom: 5%;
-  margin-left: 10%;
+  margin-left: 7%;
   text-align: center;
 }
 
@@ -106,7 +110,7 @@ img {
   align-items: stretch;
   margin-bottom: 1%;
   margin-top: 2%;
-  margin-left: 10%;
+  margin-left: 8%;
 }
 
 .button {
@@ -126,7 +130,7 @@ img {
   flex-direction: row;
   height: 60px;
   justify-content: space-between;
-  margin-left: 10%;
+  margin-left: 7%;
   margin-bottom: 2%;
   padding: 17px;
   width: 73%;
