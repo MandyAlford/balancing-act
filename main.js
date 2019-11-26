@@ -19,7 +19,20 @@ function removeWelcome(event) {
 
 function activeNavItem(event){
   if (event.target.classList.contains("navigation")){
-    console.log("I was clicked");
     event.target.classList.toggle("active");
+    deActivateNavItem(event);
+  }
+}
+
+function deActivateNavItem(event){
+  if (event.target===navDashboard){
+    navTransactions.classList.remove("active");
+    navAssets.classList.remove("active");
+  } else if (event.target===navTransactions){
+    navDashboard.classList.remove("active");
+    navAssets.classList.remove("active");
+  } else if (event.target===navAssets){
+    navDashboard.classList.remove("active");
+    navTransactions.classList.remove("active");
   }
 }
