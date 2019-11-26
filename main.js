@@ -30,7 +30,7 @@ function deActivateNavItem(){
   if (event.target===navDashboard){
     navTransactions.classList.remove("active");
     navAssets.classList.remove("active");
-    removeDashboardView();
+    addDashboardView();
   } else if (event.target===navTransactions){
     navDashboard.classList.remove("active");
     navAssets.classList.remove("active");
@@ -42,14 +42,18 @@ function deActivateNavItem(){
   }
 }
 
-function removeDashboardView (event){
+function removeDashboardView (){
   if (navTransactions.classList.contains("active")){
     console.log("trans was clicked")
     financialOverview.remove();
     transactionOverview.remove();
-  } else if (navDashboard.classList.contains("active")){
-    console.log("dash was clicked")
-    financialOverview.add();
-    transactionOverview.add();
+//   } else if (navDashboard.classList.contains("active")){
+//     console.log("dash was clicked")
+//     addFinancialOverview();
+//     addTransactionOverview();
   }
 }
+
+function addDashboardView(){
+    console.log("dash was clicked");
+  }
