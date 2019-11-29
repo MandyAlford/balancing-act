@@ -7,7 +7,7 @@ var navIcons= document.querySelector(".navigation");
 var financialOverview= document.querySelector(".financial-overview");
 var transactionOverview= document.querySelector(".transaction-wrapper");
 
-closeImg.addEventListener("click", removeWelcome);
+// closeImg.addEventListener("click", removeWelcome);
 navDashboard.addEventListener("click", activeNavItem);
 navTransactions.addEventListener("click", activeNavItem);
 navAssets.addEventListener("click", activeNavItem);
@@ -35,6 +35,7 @@ function deActivateNavItem(){
     navDashboard.classList.remove("active");
     navAssets.classList.remove("active");
     removeDashboardView();
+    addTransactionsView();
   } else if (event.target===navAssets){
     navDashboard.classList.remove("active");
     navTransactions.classList.remove("active");
@@ -43,8 +44,6 @@ function deActivateNavItem(){
 }
 
 function removeDashboardView (){
-  if (navTransactions.classList.contains("active")){
-    console.log("trans was clicked")
     financialOverview.remove();
     transactionOverview.remove();
 //   } else if (navDashboard.classList.contains("active")){
@@ -52,8 +51,12 @@ function removeDashboardView (){
 //     addFinancialOverview();
 //     addTransactionOverview();
   }
-}
+
 
 function addDashboardView(){
     console.log("dash was clicked");
+  }
+
+  function addTransactionsView(){
+    console.log("trans was clicked");
   }

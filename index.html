@@ -14,7 +14,7 @@
         <img class="navigation" id="nav-transactions" src="assets/Balancing Act/transactions.svg"</img>
         <img class="navigation" id="nav-assets" src="assets/Balancing Act/profile.svg"</img>
       </nav>
-      <section class="financial-overview">
+      <!-- <section class="financial-overview">
         <h1>Balancing Act</h1>
         <section id="welcome-message">
           <img class ="close" id="close-message" src="assets/Balancing Act/close.svg"</img>
@@ -127,6 +127,138 @@
               <p class="inflow">-</p>
               <p class="outflow">$6.00</p>
             </section>
+        </section>
+      </section> -->
+      <section id="transactions-page-view">
+        <div id="trans-view-header">
+          <h2>Transactions</h2>
+          <button class="trans-button" id="all-trans-btn">ALL</button>
+          <button class="trans-button" id="inflow-trans-btn">INFLOW</button>
+          <button class="trans-button" id="outflow-trans-btn">OUTFLOW</button>
+        </div>
+        <section class="trans-view-list">
+          <section class="transactions">
+            <section class="transaction-header">
+              <p class="date">Date</p>
+              <p class="payee">Payee</p>
+              <p class="inflow">Inflow</p>
+              <p class="outflow">Outflow</p>
+            </section>
+            <section class="individual-transaction">
+              <p class="date">Oct 25, 2019</p>
+              <p class="payee">Target</p>
+              <p class="inflow">-</p>
+              <p class="outflow">$82.35</p>
+            </section>
+            <section class="individual-transaction">
+              <p class="date">Oct 24, 2019</p>
+              <p class="payee">Express</p>
+              <p class="inflow">-</p>
+              <p class="outflow">$212.24</p>
+            </section>
+            <section class="individual-transaction">
+              <p class="date">Oct 22, 2019</p>
+              <p class="payee">Paycheck</p>
+              <p class="inflow">$1,319.12</p>
+              <p class="outflow">-</p>
+            </section>
+            <section class="individual-transaction">
+              <p class="date">Oct 21, 2019</p>
+              <p class="payee">Trader Joe's</p>
+              <p class="inflow">-</p>
+              <p class="outflow">$54.92</p>
+            </section>
+            <section class="individual-transaction">
+              <p class="date">Oct 20, 2019</p>
+              <p class="payee">Shell</p>
+              <p class="inflow">-</p>
+              <p class="outflow">$46.23</p>
+            </section>
+            <section class="individual-transaction">
+              <p class="date">Oct 19, 2019</p>
+              <p class="payee">Rent</p>
+              <p class="inflow">$800.00</p>
+              <p class="outflow">-</p>
+            </section>
+            <section class="individual-transaction">
+              <p class="date">Oct 19, 2019</p>
+              <p class="payee">Hapa Sushi</p>
+              <p class="inflow">-</p>
+              <p class="outflow">$13.97</p>
+            </section>
+            <section class="individual-transaction">
+              <p class="date">Oct 18, 2019</p>
+              <p class="payee">Pig Train</p>
+              <p class="inflow">-</p>
+              <p class="outflow">$4.83</p>
+            </section>
+            <section class="individual-transaction">
+              <p class="date">Oct 18, 2019</p>
+              <p class="payee">RTD</p>
+              <p class="inflow">-</p>
+              <p class="outflow">$6.00</p>
+            </section>
+            <section class="individual-transaction">
+              <p class="date">Oct 24, 2019</p>
+              <p class="payee">Express</p>
+              <p class="inflow">-</p>
+              <p class="outflow">$212.24</p>
+            </section>
+            <section class="individual-transaction">
+              <p class="date">Oct 24, 2019</p>
+              <p class="payee">Express</p>
+              <p class="inflow">-</p>
+              <p class="outflow">$212.24</p>
+            </section>
+            <section class="individual-transaction">
+              <p class="date">Oct 24, 2019</p>
+              <p class="payee">Express</p>
+              <p class="inflow">-</p>
+              <p class="outflow">$212.24</p>
+            </section>
+            <section class="individual-transaction">
+              <p class="date">Oct 24, 2019</p>
+              <p class="payee">Express</p>
+              <p class="inflow">-</p>
+              <p class="outflow">$212.24</p>
+            </section>
+            <section class="individual-transaction">
+              <p class="date">Oct 24, 2019</p>
+              <p class="payee">Express</p>
+              <p class="inflow">-</p>
+              <p class="outflow">$212.24</p>
+            </section>
+          </section>
+        </section>
+      </section>
+      <section class="new-transaction">
+          <h2>New Transaction</h2>
+          <form>
+            <p>Type of transaction:</p>
+            <select name="trans-types">
+              <option value="Expense">Expense</option>
+              <option value="Deposit">Deposit</option>
+            </select>
+            <p>Category:</p>
+            <select name="categories">
+              <option value="checking">Checking</option>
+              <option value="savings">Savings</option>
+              <option value="credit-card">Credit Card</option>
+            </select>
+            <p>Account from:</p>
+            <select name="accounts">
+              <option value="checking">Checking</option>
+              <option value="savings">Savings</option>
+              <option value="credit-card">Credit Card</option>
+            </select>
+            <p>Payee</p>
+            <input type="text"></input>
+            <p>Outflow</p>
+            <input type="text"></input>
+            <p>Inflow</p>
+            <input type="text"></input>
+            <button id="log-btn">Log Expense</button>
+          </form>
         </section>
       </section>
     </main>
