@@ -1,3 +1,5 @@
+var welcomeMessageID = "welcome-message-show";
+addDashboardView()
 
 var closeImg = document.querySelector("#close-message");
 var navDashboard= document.querySelector("#nav-dashboard");
@@ -7,15 +9,20 @@ var navIcons= document.querySelector(".navigation");
 var financialOverview= document.querySelector(".financial-overview");
 var transactionOverview= document.querySelector(".transaction-wrapper");
 
-// closeImg.addEventListener("click", removeWelcome);
+
+
+closeImg.addEventListener("click", removeWelcome);
 navDashboard.addEventListener("click", activeNavItem);
 navTransactions.addEventListener("click", activeNavItem);
 navAssets.addEventListener("click", activeNavItem);
 
 
 function removeWelcome(event) {
+  console.log("hitting close first");
   if (event.target.classList.contains("close")){
-   event.target.parentElement.remove()
+    console.log("hitting close")
+    welcomeMessageID = "welcome-message-hide";
+    addDashboardView();
    }
   }
 
@@ -59,7 +66,7 @@ var financialOverviewSection = document.createElement('section');
   document.getElementById('right').innerHTML= "";
   financialOverviewSection.innerHTML = `
     <h1>Balancing Act</h1>
-    <section id="welcome-message">
+    <section id=${welcomeMessageID}>
       <img class ="close" id="close-message" src="assets/Balancing Act/close.svg"</img>
       <p class="greeting">Welcome, Oscar!</p>
     </section>

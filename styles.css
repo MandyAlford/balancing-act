@@ -61,7 +61,7 @@ img {
   min-height: 750px;
 }
 
-#welcome-message {
+#welcome-message-show {
   background-image: linear-gradient(to right, #8ED1DC, #E3F4F6);
   box-shadow: 5px 5px 5px rgba(0,0,0,0.05);
   height: 2%;
@@ -69,6 +69,10 @@ img {
   margin-left: 7%;
   width: 73%;
   min-height: 140px;
+}
+
+#welcome-message-hide {
+  display: none;
 }
 
 #close-message {
