@@ -21,7 +21,6 @@ main {
 nav {
   display: flex;
   flex-direction: column;
-  float: left;
   width: 7em;
   background-color: white;
   justify-content: center;
@@ -51,12 +50,15 @@ img {
   width:47%;
 }
 
+#right {
+  width:43%;
+}
+
 #financial-overview {
   background-color: #F5F5F5;
   display: flex;
   flex-direction: column;
   min-height: 750px;
-  /* width: 47%; */
 }
 
 #welcome-message {
@@ -149,9 +151,7 @@ img {
   background-color: #F5F5F5;
   display: flex;
   flex-direction: column;
-  /* float: right; */
   min-height: 750px;
-  /* width: 45%; */
   padding-top: 6%;
   padding-bottom: 1%;
 }
@@ -232,7 +232,7 @@ img {
   margin-left: 5%;
   margin-top: 6%;
   min-height: 750px;
-  width: 45%;
+  /* width: 45%; */
   /* padding-bottom: 1%; */
   padding-left: 5%;
 }
