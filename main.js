@@ -52,11 +52,62 @@ function removeDashboardView (){
 //     addTransactionOverview();
   }
 
+var financialOverviewSection = document.createElement('section');
+  financialOverviewSection.setAttribute('class','financial-overview');
+  financialOverviewSection.innerHTML = `
+    <h1>Balancing Act</h1>
+    <section id="welcome-message">
+      <img class ="close" id="close-message" src="assets/Balancing Act/close.svg"</img>
+      <p class="greeting">Welcome, Oscar!</p>
+    </section>
+    <section class="personal-summary">
+      <section class="financial-totals">
+        <p class="personal-total-label">INCOME</p>
+        <p class="personal-total-number">$2,119.12</p>
+      </section>
+      <section class="financial-totals">
+        <p class="personal-total-label">EXPENSES</p>
+        <p class="personal-total-number">$420.54</p>
+      </section>
+      <section class="financial-totals">
+        <p class="personal-total-label">CREDIT SCORE</p>
+        <p class="personal-total-number">673</p>
+      </section>
+    </section>
+    <section id="accounts">
+      <div class="account-container">
+        <h2>Accounts</h2>
+        <button class="button" id="manage-acct-btn">MANAGE ACCOUNTS</button>
+      </div>
+      <section class="account">
+        <img class="acct-icons"src="assets/Balancing Act/checking.svg">
+        <p class="acct-source">Wells Fargo</p>
+        <p class="acct-type">Checking</p>
+      </section>
+      <section class="account">
+        <img class="acct-icons"src="assets/Balancing Act/savings.svg">
+        <p class="acct-source">Wells Fargo</p>
+        <p class="acct-type">Savings</p>
+      </section>
+      <section class="account">
+        <img class="acct-icons"src="assets/Balancing Act/credit-card.svg">
+        <p class="acct-source">Amazon Credit</p>
+        <p class="acct-type">Credit Card</p>
+      </section>
+      <section class="account">
+        <img class="acct-icons"src="assets/Balancing Act/credit-card.svg">
+        <p class="acct-source">Southwest Credit</p>
+        <p class="acct-type">Credit Card</p>
+      </section>
+    </section>
+  `
+  console.log(financialOverviewSection);
+  document.getElementById('left').appendChild(financialOverviewSection);
 
 function addDashboardView(){
-    console.log("dash was clicked");
+
   }
 
   function addTransactionsView(){
-    console.log("trans was clicked");
+
   }
