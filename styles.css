@@ -1,31 +1,30 @@
 *{
-   margin: 0px;
-   padding: 0px;
    box-sizing: border-box;
    Font color: #363636;
    font-family: 'Biryani', sans-serif;
+   margin: 0px;
+   padding: 0px;
 }
 
 h1 {
   font-size: 3em;
-  padding: 2%;
   margin-left: 3%;
+  padding: 2%;
 }
 
 main {
   background-color: #F5F5F5;
-  min-height: 780px;
   display: flex;
+  min-height: 780px;
 }
 
 nav {
+  background-color: white;
   display: flex;
   flex-direction: column;
-  float: left;
-  width: 7em;
-  background-color: white;
   justify-content: center;
   min-height: 750px;
+  width: 7em;
 }
 
 img {
@@ -47,28 +46,39 @@ img {
   top: 0;
 }
 
-.financial-overview {
+#left{
+  width:47%;
+}
+
+#right {
+  width:43%;
+}
+
+#financial-overview {
   background-color: #F5F5F5;
   display: flex;
   flex-direction: column;
   min-height: 750px;
-  width: 47%;
 }
 
-#welcome-message {
+#welcome-message-show {
   background-image: linear-gradient(to right, #8ED1DC, #E3F4F6);
   box-shadow: 5px 5px 5px rgba(0,0,0,0.05);
   height: 2%;
   margin-bottom: 4%;
   margin-left: 7%;
-  width: 73%;
   min-height: 140px;
+  width: 73%;
+}
+
+#welcome-message-hide {
+  display: none;
 }
 
 #close-message {
-  margin: 0px;
   float: right;
   height: 20px;
+  margin: 0px;
   padding: 5px;
 }
 
@@ -96,8 +106,8 @@ img {
 }
 
 .personal-summary {
-  display: flex;
   align-content: space-between;
+  display: flex;
   flex-direction: row;
   margin-bottom: 5%;
   margin-left: 7%;
@@ -105,9 +115,9 @@ img {
 }
 
 .account-container {
+  align-items: stretch;
   display: flex;
   flex-direction: row;
-  align-items: stretch;
   margin-bottom: 1%;
   margin-top: 2%;
   margin-left: 8%;
@@ -130,8 +140,8 @@ img {
   flex-direction: row;
   height: 60px;
   justify-content: space-between;
-  margin-left: 7%;
   margin-bottom: 2%;
+  margin-left: 7%;
   padding: 17px;
   width: 73%;
 }
@@ -145,19 +155,17 @@ img {
   background-color: #F5F5F5;
   display: flex;
   flex-direction: column;
-  /* float: right; */
   min-height: 750px;
-  width: 45%;
-  padding-top: 6%;
   padding-bottom: 1%;
+  padding-top: 6%;
 }
 
 .transaction-container {
+  align-items: stretch;
   background-color: white;
   box-shadow: 5px 5px 5px rgba(0,0,0,0.05);
   display: flex;
   flex-direction: row;
-  align-items: stretch;
   margin-top: 4%;
   padding: 2%;
 }
@@ -180,27 +188,27 @@ img {
 .individual-transaction {
   border-bottom: solid 2px #CCCCCC;
   display: flex;
-  padding: 2%;
   flex-direction: row;
   justify-content: space-between;
+  padding: 2%;
 }
 
 #trans-view-header{
+  align-items:center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items:center;
   margin: 5%;
   margin-right: 0%;
 }
 
 .trans-button{
-  margin-left: 10px;
   background-color: #1CA3BA;
   border-radius: 16px;
   box-shadow: 5px 5px 5px rgba(0,0,0,0.05);
   color: white;
   height: 35px;
+  margin-left: 10px;
   width: 100px;
 }
 
@@ -212,35 +220,35 @@ img {
   margin-left: 5%;
 }
 
-#transactions-page-view{
-  /* width: 47%; */
-}
-
 .payee {
   text-align: justify;
 }
 
 .new-transaction{
   background-color: white;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.05);
   display: flex;
   flex-direction: column;
-  /* float: right; */
   margin-left: 5%;
   margin-top: 6%;
   min-height: 750px;
-  width: 45%;
-  /* padding-bottom: 1%; */
   padding-left: 5%;
 }
 
+#new-transaction-btn{
+  margin-left: 30%;
+}
+
 input{
-  width: 80%;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.05);
   margin-bottom: 2%;
+  width: 80%;
 }
 
 select{
-  width: 80%;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.05);
   margin-bottom: 2%;
+  width: 80%;
 }
 
 #log-btn{
