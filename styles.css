@@ -23,7 +23,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 750px;
+  min-height: 790px;
   position: fixed;
   width: 7em;
 }
@@ -32,6 +32,10 @@ img {
   height: 40px;
   margin: 1%;
   margin-bottom: 12%;
+}
+
+img:hover{
+  cursor:grabbing;
 }
 
 .active {
@@ -46,6 +50,10 @@ img {
   margin-top: 10%;
   position: absolute;
   top: 0;
+}
+
+.logo:hover{
+  cursor: default;
 }
 
 #left{
@@ -87,6 +95,7 @@ img {
 
 .greeting {
   font-size: 2em;
+  margin-top: 3%;
   padding: 9% 5% 5% 3%;
 }
 
@@ -136,6 +145,10 @@ img {
   width: 170px;
 }
 
+.button:hover {
+  cursor:grabbing;
+}
+
 .account {
   background-color: white;
   box-shadow: 5px 5px 5px rgba(0,0,0,0.05);
@@ -158,7 +171,7 @@ img {
   background-color: #F5F5F5;
   display: flex;
   flex-direction: column;
-  margin-top: 1%;
+  margin-top: 2%;
   min-height: 750px;
   padding-bottom: 1%;
   padding-top: 6%;
@@ -207,17 +220,33 @@ img {
 }
 
 .trans-button{
-  background-color: #1CA3BA;
+  background-color: white;
+  border: 2px solid;
+  border-color: #1CA3BA;
   border-radius: 16px;
   box-shadow: 5px 5px 5px rgba(0,0,0,0.05);
-  color: white;
+  color: #1CA3BA;
   height: 35px;
   margin-left: 10px;
   width: 100px;
 }
 
+.trans-button:hover{
+  cursor:grabbing;
+}
+
 #all-trans-btn {
+  background-color: #1CA3BA;
+  border-radius: 16px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.05);
+  color: white;
+  height: 35px;
   margin-left: 20%;
+  width: 100px;
+}
+
+#all-trans-btn:hover {
+  cursor:grabbing;
 }
 
 .trans-view-list{
@@ -227,12 +256,15 @@ img {
 .payee {
   width: 25%;
 }
+
 .date{
     width: 25%;
 }
+
 .inflow{
     width: 25%;
 }
+
 .outflow{
     width: 25%;
 }
@@ -244,7 +276,7 @@ img {
   flex-direction: column;
   margin-left: 5%;
   margin-top: 18%;
-  min-height: 750px;
+  min-height: 650px;
   padding-left: 5%;
 }
 
@@ -272,4 +304,8 @@ select{
   height: 35px;
   margin-top: 4%;
   width: 170px;
+}
+
+#log-btn:hover{
+    cursor:grabbing;
 }
