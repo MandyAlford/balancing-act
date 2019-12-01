@@ -9,8 +9,6 @@ var navIcons= document.querySelector(".navigation");
 var financialOverview= document.querySelector(".financial-overview");
 var transactionOverview= document.querySelector(".transaction-wrapper");
 
-
-
 closeImg.addEventListener("click", removeWelcome);
 navDashboard.addEventListener("click", activeNavItem);
 navTransactions.addEventListener("click", activeNavItem);
@@ -18,17 +16,15 @@ navAssets.addEventListener("click", activeNavItem);
 
 
 function removeWelcome(event) {
-  console.log("hitting close first");
   if (event.target.classList.contains("close")){
-    console.log("hitting close")
     welcomeMessageID = "welcome-message-hide";
     addDashboardView();
-   }
   }
+}
 
 function activeNavItem(event){
   if (event.target.classList.contains("navigation")){
-    event.target.classList.toggle("active");
+    event.target.classList.add("active");
     deActivateNavItem();
   }
 }
@@ -41,26 +37,15 @@ function deActivateNavItem(){
   } else if (event.target===navTransactions){
     navDashboard.classList.remove("active");
     navAssets.classList.remove("active");
-    // removeDashboardView();
     addTransactionsView();
   } else if (event.target===navAssets){
     navDashboard.classList.remove("active");
     navTransactions.classList.remove("active");
-    removeDashboardView();
   }
 }
 
-// function removeDashboardView (){
-//     financialOverviewSection.remove();
-//     transactionOverviewSection.remove();
-//   } else if (navDashboard.classList.contains("active")){
-//     console.log("dash was clicked")
-//     addFinancialOverview();
-//     addTransactionOverview();
-//   }
-
 function addDashboardView(){
-var financialOverviewSection = document.createElement('section');
+  var financialOverviewSection = document.createElement('section');
   financialOverviewSection.setAttribute('class','financial-overview');
   document.getElementById('left').innerHTML= "";
   document.getElementById('right').innerHTML= "";
@@ -114,8 +99,8 @@ var financialOverviewSection = document.createElement('section');
   document.getElementById('left').appendChild(financialOverviewSection);
 
   var transactionOverviewSection = document.createElement('section');
-    transactionOverviewSection.setAttribute('class','transaction-wrapper');
-    transactionOverviewSection.innerHTML = `
+  transactionOverviewSection.setAttribute('class','transaction-wrapper');
+  transactionOverviewSection.innerHTML = `
     <section class="transaction-wrapper">
       <section class="transaction-container">
         <h2>Recent Transactions</h2>
@@ -184,122 +169,122 @@ var financialOverviewSection = document.createElement('section');
           </section>
       </section>
     </section>
-    `
-    document.getElementById('right').appendChild(transactionOverviewSection);
+  `
+  document.getElementById('right').appendChild(transactionOverviewSection);
 }
 
 function addTransactionsView(){
-var transactionPageLeft= document.createElement('section');
+  var transactionPageLeft= document.createElement('section');
   transactionPageLeft.setAttribute('class','transactions-page-view');
   document.getElementById('left').innerHTML= "";
   document.getElementById('right').innerHTML= "";
   transactionPageLeft.innerHTML =  `
-  <section id="transactions-page-view">
-    <div id="trans-view-header">
-      <h2>Transactions</h2>
-      <button class="trans-button" id="all-trans-btn">ALL</button>
-      <button class="trans-button" id="inflow-trans-btn">INFLOW</button>
-      <button class="trans-button" id="outflow-trans-btn">OUTFLOW</button>
-    </div>
-    <section class="trans-view-list">
-      <section class="transactions">
-        <section class="transaction-header">
-          <p class="date">Date</p>
-          <p class="payee">Payee</p>
-          <p class="inflow">Inflow</p>
-          <p class="outflow">Outflow</p>
-        </section>
-        <section class="individual-transaction">
-          <p class="date">Oct 25, 2019</p>
-          <p class="payee">Target</p>
-          <p class="inflow">-</p>
-          <p class="outflow">$82.35</p>
-        </section>
-        <section class="individual-transaction">
-          <p class="date">Oct 24, 2019</p>
-          <p class="payee">Express</p>
-          <p class="inflow">-</p>
-          <p class="outflow">$212.24</p>
-        </section>
-        <section class="individual-transaction">
-          <p class="date">Oct 22, 2019</p>
-          <p class="payee">Paycheck</p>
-          <p class="inflow">$1,319.12</p>
-          <p class="outflow">-</p>
-        </section>
-        <section class="individual-transaction">
-          <p class="date">Oct 21, 2019</p>
-          <p class="payee">Trader Joe's</p>
-          <p class="inflow">-</p>
-          <p class="outflow">$54.92</p>
-        </section>
-        <section class="individual-transaction">
-          <p class="date">Oct 20, 2019</p>
-          <p class="payee">Shell</p>
-          <p class="inflow">-</p>
-          <p class="outflow">$46.23</p>
-        </section>
-        <section class="individual-transaction">
-          <p class="date">Oct 19, 2019</p>
-          <p class="payee">Rent</p>
-          <p class="inflow">$800.00</p>
-          <p class="outflow">-</p>
-        </section>
-        <section class="individual-transaction">
-          <p class="date">Oct 19, 2019</p>
-          <p class="payee">Hapa Sushi</p>
-          <p class="inflow">-</p>
-          <p class="outflow">$13.97</p>
-        </section>
-        <section class="individual-transaction">
-          <p class="date">Oct 18, 2019</p>
-          <p class="payee">Pig Train</p>
-          <p class="inflow">-</p>
-          <p class="outflow">$4.83</p>
-        </section>
-        <section class="individual-transaction">
-          <p class="date">Oct 18, 2019</p>
-          <p class="payee">RTD</p>
-          <p class="inflow">-</p>
-          <p class="outflow">$6.00</p>
-        </section>
-        <section class="individual-transaction">
-          <p class="date">Oct 24, 2019</p>
-          <p class="payee">Express</p>
-          <p class="inflow">-</p>
-          <p class="outflow">$212.24</p>
-        </section>
-        <section class="individual-transaction">
-          <p class="date">Oct 24, 2019</p>
-          <p class="payee">Express</p>
-          <p class="inflow">-</p>
-          <p class="outflow">$212.24</p>
-        </section>
-        <section class="individual-transaction">
-          <p class="date">Oct 24, 2019</p>
-          <p class="payee">Express</p>
-          <p class="inflow">-</p>
-          <p class="outflow">$212.24</p>
-        </section>
-        <section class="individual-transaction">
-          <p class="date">Oct 24, 2019</p>
-          <p class="payee">Express</p>
-          <p class="inflow">-</p>
-          <p class="outflow">$212.24</p>
-        </section>
-        <section class="individual-transaction">
-          <p class="date">Oct 24, 2019</p>
-          <p class="payee">Express</p>
-          <p class="inflow">-</p>
-          <p class="outflow">$212.24</p>
+    <section id="transactions-page-view">
+      <div id="trans-view-header">
+        <h2>Transactions</h2>
+        <button class="trans-button" id="all-trans-btn">ALL</button>
+        <button class="trans-button" id="inflow-trans-btn">INFLOW</button>
+        <button class="trans-button" id="outflow-trans-btn">OUTFLOW</button>
+      </div>
+      <section class="trans-view-list">
+        <section class="transactions">
+          <section class="transaction-header">
+            <p class="date">Date</p>
+            <p class="payee">Payee</p>
+            <p class="inflow">Inflow</p>
+            <p class="outflow">Outflow</p>
+          </section>
+          <section class="individual-transaction">
+            <p class="date">Oct 25, 2019</p>
+            <p class="payee">Target</p>
+            <p class="inflow">-</p>
+            <p class="outflow">$82.35</p>
+          </section>
+          <section class="individual-transaction">
+            <p class="date">Oct 24, 2019</p>
+            <p class="payee">Express</p>
+            <p class="inflow">-</p>
+            <p class="outflow">$212.24</p>
+          </section>
+          <section class="individual-transaction">
+            <p class="date">Oct 22, 2019</p>
+            <p class="payee">Paycheck</p>
+            <p class="inflow">$1,319.12</p>
+            <p class="outflow">-</p>
+          </section>
+          <section class="individual-transaction">
+            <p class="date">Oct 21, 2019</p>
+            <p class="payee">Trader Joe's</p>
+            <p class="inflow">-</p>
+            <p class="outflow">$54.92</p>
+          </section>
+          <section class="individual-transaction">
+            <p class="date">Oct 20, 2019</p>
+            <p class="payee">Shell</p>
+            <p class="inflow">-</p>
+            <p class="outflow">$46.23</p>
+          </section>
+          <section class="individual-transaction">
+            <p class="date">Oct 19, 2019</p>
+            <p class="payee">Rent</p>
+            <p class="inflow">$800.00</p>
+            <p class="outflow">-</p>
+          </section>
+          <section class="individual-transaction">
+            <p class="date">Oct 19, 2019</p>
+            <p class="payee">Hapa Sushi</p>
+            <p class="inflow">-</p>
+            <p class="outflow">$13.97</p>
+          </section>
+          <section class="individual-transaction">
+            <p class="date">Oct 18, 2019</p>
+            <p class="payee">Pig Train</p>
+            <p class="inflow">-</p>
+            <p class="outflow">$4.83</p>
+          </section>
+          <section class="individual-transaction">
+            <p class="date">Oct 18, 2019</p>
+            <p class="payee">RTD</p>
+            <p class="inflow">-</p>
+            <p class="outflow">$6.00</p>
+          </section>
+          <section class="individual-transaction">
+            <p class="date">Oct 24, 2019</p>
+            <p class="payee">Express</p>
+            <p class="inflow">-</p>
+            <p class="outflow">$212.24</p>
+          </section>
+          <section class="individual-transaction">
+            <p class="date">Oct 24, 2019</p>
+            <p class="payee">Express</p>
+            <p class="inflow">-</p>
+            <p class="outflow">$212.24</p>
+          </section>
+          <section class="individual-transaction">
+            <p class="date">Oct 24, 2019</p>
+            <p class="payee">Express</p>
+            <p class="inflow">-</p>
+            <p class="outflow">$212.24</p>
+          </section>
+          <section class="individual-transaction">
+            <p class="date">Oct 24, 2019</p>
+            <p class="payee">Express</p>
+            <p class="inflow">-</p>
+            <p class="outflow">$212.24</p>
+          </section>
+          <section class="individual-transaction">
+            <p class="date">Oct 24, 2019</p>
+            <p class="payee">Express</p>
+            <p class="inflow">-</p>
+            <p class="outflow">$212.24</p>
+          </section>
         </section>
       </section>
     </section>
-  </section>
   `
-document.getElementById('left').appendChild(transactionPageLeft);
+  document.getElementById('left').appendChild(transactionPageLeft);
 
-var transactionPageRight= document.createElement('section');
+  var transactionPageRight= document.createElement('section');
   transactionPageRight.setAttribute('class','new-transaction');
   transactionPageRight.innerHTML = `
   <section class="new-transaction">
