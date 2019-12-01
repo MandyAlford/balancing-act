@@ -24,6 +24,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   min-height: 750px;
+  position: fixed;
   width: 7em;
 }
 
@@ -42,12 +43,14 @@ img {
   height: 80px;
   justify-content: flex-start;
   margin-left: 12px;
+  margin-top: 10%;
   position: absolute;
   top: 0;
 }
 
 #left{
   width:47%;
+  margin-left: 7%;
 }
 
 #right {
@@ -155,6 +158,7 @@ img {
   background-color: #F5F5F5;
   display: flex;
   flex-direction: column;
+  margin-top: 1%;
   min-height: 750px;
   padding-bottom: 1%;
   padding-top: 6%;
@@ -221,7 +225,16 @@ img {
 }
 
 .payee {
-  text-align: justify;
+  width: 25%;
+}
+.date{
+    width: 25%;
+}
+.inflow{
+    width: 25%;
+}
+.outflow{
+    width: 25%;
 }
 
 .new-transaction{
@@ -230,7 +243,7 @@ img {
   display: flex;
   flex-direction: column;
   margin-left: 5%;
-  margin-top: 6%;
+  margin-top: 18%;
   min-height: 750px;
   padding-left: 5%;
 }
