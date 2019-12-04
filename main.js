@@ -292,20 +292,22 @@ function addTransactionsView(){
       <form>
         <p>Type of transaction:</p>
         <select name="trans-types">
-          <option value="Expense">Expense</option>
-          <option value="Deposit">Deposit</option>
+          <option value="Inflow">Inflow</option>
+          <option value="Outflow">Outflow</option>
         </select>
         <p>Category:</p>
         <select name="categories">
-          <option value="checking">Checking</option>
-          <option value="savings">Savings</option>
-          <option value="credit-card">Credit Card</option>
+          <option value="groceries">Groceries</option>
+          <option value="bills">Bills</option>
+          <option value="fun-money">Fun Money</option>
+          <option value="paycheck">Paycheck</option>
         </select>
         <p>Account from:</p>
         <select name="accounts">
           <option value="checking">Checking</option>
           <option value="savings">Savings</option>
-          <option value="credit-card">Credit Card</option>
+          <option value="amazon-credit">Amazon Credit</option>
+          <option value="southwest-credit">Southwest Credit</option>
         </select>
         <p>Payee</p>
         <input type="text"></input>
